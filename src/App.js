@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import VHH_EventForm1 from './components/VHH_EventForm1';
+import VHH_EventForm2 from './components/VHH_EventForm2';
+import VHH_EventForm3 from './components/VHH_EventForm3';
+import VHH_EventForm4 from './components/VHH_EventForm4';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className='container'>
+        <h1>Event Form Demo </h1>
+        <VHH_EventForm1 />
+        <VHH_EventForm2 />
+        <VHH_EventForm3 />
+        <VHH_EventForm4 name="Vu Hong Hung" />
+      </div>
+    );
+  }
 }
-
-export default App;
